@@ -1,0 +1,83 @@
+{
+  "feature_order": [
+    "person_age",
+    "person_income",
+    "person_emp_exp",
+    "loan_amnt",
+    "loan_int_rate",
+    "loan_percent_income",
+    "cb_person_cred_hist_length",
+    "credit_score",
+    "person_gender",
+    "person_education",
+    "person_home_ownership",
+    "loan_intent",
+    "previous_loan_defaults_on_file"
+  ],
+  "numeric": [
+    "person_age",
+    "person_income",
+    "person_emp_exp",
+    "loan_amnt",
+    "loan_int_rate",
+    "loan_percent_income",
+    "cb_person_cred_hist_length",
+    "credit_score"
+  ],
+  "categorical": {
+    "person_gender": {
+      "choices": [
+        "female",
+        "male"
+      ],
+      "default": "female"
+    },
+    "person_education": {
+      "choices": [
+        "Associate",
+        "Bachelor",
+        "Doctorate",
+        "High School",
+        "Master"
+      ],
+      "default": "Associate"
+    },
+    "person_home_ownership": {
+      "choices": [
+        "MORTGAGE",
+        "OTHER",
+        "OWN",
+        "RENT"
+      ],
+      "default": "MORTGAGE"
+    },
+    "loan_intent": {
+      "choices": [
+        "DEBTCONSOLIDATION",
+        "EDUCATION",
+        "HOMEIMPROVEMENT",
+        "MEDICAL",
+        "PERSONAL",
+        "VENTURE"
+      ],
+      "default": "DEBTCONSOLIDATION"
+    },
+    "previous_loan_defaults_on_file": {
+      "choices": [
+        "No",
+        "Yes"
+      ],
+      "default": "No"
+    }
+  },
+  "defaults": {
+    "person_age": 26.0,
+    "person_income": 67048.0,
+    "person_emp_exp": 4.0,
+    "loan_amnt": 8000.0,
+    "loan_int_rate": 11.01,
+    "loan_percent_income": 0.12,
+    "cb_person_cred_hist_length": 4.0,
+    "credit_score": 640.0
+  }
+}
