@@ -20,17 +20,13 @@ FIELD_DISPLAY_NAMES = {
     "previous_loan_defaults_on_file": "Previous Loan Defaults"
 }
 
-# ------------------------------
 # Loading model, preprocessor, schema
-# ------------------------------
 MODEL_DIR = Path("model_artifacts")
 clf = joblib.load(MODEL_DIR / "xgb_final_model.joblib")
 preproc = joblib.load(MODEL_DIR / "preprocessor.joblib")
 schema = json.load(open(MODEL_DIR / "input_schema.json"))
 
-# ------------------------------
 # Streamlit UI
-# ------------------------------
 st.set_page_config(page_title="Loan Approval Predictor", layout="centered")
 st.title("🏦 Loan Approval Predictor")
 
@@ -64,4 +60,5 @@ if st.sidebar.button("Predict"):
 
     st.write("### Input Summary")
     st.write(df)
+
 
