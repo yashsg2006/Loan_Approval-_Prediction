@@ -71,13 +71,13 @@
     }
   },
   "defaults": {
-    "person_age": 26.0,
-    "person_income": 67048.0,
-    "person_emp_exp": 4.0,
-    "loan_amnt": 8000.0,
-    "loan_int_rate": 11.01,
-    "loan_percent_income": 0.12,
-    "cb_person_cred_hist_length": 4.0,
-    "credit_score": 640.0
+    "person_age": 0.0,
+    "person_income": 0.0,
+    "person_emp_exp": 0.0,
+    "loan_amnt": 0.0,
+    "loan_int_rate": 0.0,
+    "loan_percent_income": 0.0,
+    "cb_person_cred_hist_length": 0.0,
+    "credit_score": 0.0
   }
 }
